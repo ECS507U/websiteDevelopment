@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html> 
+	<head> 
+		<title>Sign-Up</title> 
+	</head> 
+	<body id="body-color"> 
+		<div id="Sign-Up"> 
+			<fieldset style="width:30%"><legend>Registration Form</legend> <table border="0"> 
+				<tr> 
+					<form method="POST" action="connectivity-sign-up.php">
+						
+				
+				<td>First Name</td><td> <input type="text" name="firstname"></td> 
+				</tr>
+				<tr>
+				<td>Surname</td><td><input type="text" name="surname"></td>
+				</tr>
+				<tr> <td>Email</td><td> <input type="text" name="email"></td> 
+				</tr>
+				<tr> <td>UserName</td><td> <input type="text" name="user"></td>
+				</tr> 
+				<tr> <td>Password</td><td> <input type="password" name="pass"></td>
+				</tr>
+				<tr> <td>Confirm Password </td><td><input type="password" name="cpass"></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td><td>
+					<input type="date"   value="dd-mm-yyyy" class="input-medium search-query" onkeypress="return false">
+					</td>
+				</tr>
+				<tr>
+					<td>I prefer</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td>About me</td>
+				</tr>	
+				<tr>	<td>
+					<textarea rows="4" cols="50" name="description" form="usrform">Enter here...</textarea></td>
+				</tr>
+				<tr> 
+					<td><input id="button" type="submit" name="Sign up!" value="Sign-Up"></td> 
+				</tr> 
+				</form> 
+				</table> 
+			</fieldset> 
+		</div> 
+	</body> 
+</html>
+
