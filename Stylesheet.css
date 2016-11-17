@@ -1,0 +1,49 @@
+body {
+background-color: #FAFAFA;
+}
+
+p {
+color: black;
+font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+font-style: normal;
+font-variant: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eeeeee;
+    display:table;
+    margin:0 auto;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e0e0e0;
+}
+
+.NavigationBar{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
