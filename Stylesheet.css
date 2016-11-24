@@ -34,12 +34,6 @@ ul, li{ list-style:none; margin:0; padding:0;}
 .main-menu > ul > li > a{ text-align:center;}
 .main-menu {width:80%;}
 
-.NavigationBar{
- 
-    margin:1px;
-    width:80%;
-}
-
 article {
     display: block;
     width:80%;
