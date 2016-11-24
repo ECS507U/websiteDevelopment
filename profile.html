@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 50px auto;
+    width: 685px;
+
+/* For visibility. Delete me */
+border: 1px solid red;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid green;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Info
+{
+    width: 450px;
+    text-align: left;
+
+    /* Move it to the right */
+    float: right;
+
+}
+
+#Interest
+{
+	width:450px;
+	text-align: left;
+	float: right;
+}
+
+
+</style>
+
+<div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo"></div>
+        <div id="ProfileOptions">
+        a
+        </div>
+    </div>
+
+    <div id="Info">
+	
+	<fieldset style="width:30%"><legend>My Information</legend> <table width="400"> 
+	
+       <tr>	
+	
+				<td>First Name:<input type="text" name="firstname"></td>
+				</tr>
+	
+				<tr>
+				<td>Surname:     <input type="text" name="surname"></td>
+				</tr>
+				<tr>
+					<td>Gender    <select>
+						<option selected disabled>Choose here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select></td>
+				</tr>
+	
+				<tr>
+					<td>Date of Birth: <input type="date"   value="dd-mm-yyyy" class="input-medium search-query" onkeypress="return false">
+					</td>
+				</tr>
+	
+				<tr>
+					<td>I prefer
+					<select>
+						<option selected disabled>Choose here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select></td>
+				</tr>
+	
+				<tr>
+					<td>About me</td>
+				</tr>	
+				<tr>	<td>
+					<textarea rows="3" cols="40" name="description" form="usrform">Enter here...</textarea></td>
+				</tr>
+			</form>
+			</table>
+	
+	
+    </div>
+
+    <div id="Interest">
+	<fieldset style="width:30%"><legend>My Interest</legend> <table width="400"> 
+	
+       <tr>	
+		<td>Favorite Movie: </td><td> <input type="text" name="favmovie"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Music: </td><td> <input type="text" name="favmusic"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Book: </td><td> <input type="text" name="favbook"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Hobby: </td><td> <input type="text" name="hobby"></td> 
+	</tr>
+				
+	<tr>
+					<td>Political Views</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="extliberal">Extreme Liberal</option>
+						<option value="mildliberal">Mild Liberal</option>
+						<option value="central">Central</option>
+						<option value="mildconservative">Mild Conservative</option>
+						<option value="extconservative">Extreme Conservative</option>
+						<option value="extconservative">Not interested in Politics</option>
+						</select></td>
+				</tr>
+	
+	<tr>
+					<td>Religion</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="protestism">Protestism Christianity</option>
+						<option value="catholics">Catholic Christianity</option>
+						<option value="islam">Islamism</option>
+						<option value="buddhism">Buddhism</option>
+						<option value="hinduism">Hinduism</option>
+						<option value="juduism">Juduism</option>
+						<option value="notlisted">Not listed</option>
+						<option value="atheagno">Athelism/Agnostism</option>
+						<option value="noanswer">Prefer not to answer</option>
+						</select></td>
+				</tr>
+				
+			</form>
+			</table>
+    </div>
+
+    
+    <div style="clear:both"></div>
+</div>
+
+</body>
+</html>
