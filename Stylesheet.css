@@ -2,11 +2,41 @@ body {
 background-color: #FAFAFA;
 }
 
+h1{
+font-family: Verdana, Geneva, sans-serif;
+font-size: 40px;
+} 
+
 p {
-color: black;
-font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+font-family: Verdana, Geneva, sans-serif;
 font-style: normal;
 font-variant: normal;
+line-height: 130%;
+font-size: 17px;
+}
+
+form {
+    width:40%;
+    margin:0 auto;
+}
+
+button {
+    background-color: #FF3D00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 1px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 li a {
@@ -34,8 +64,14 @@ ul, li{ list-style:none; margin:0; padding:0;}
 .main-menu > ul > li > a{ text-align:center;}
 .main-menu {width:80%;}
 
-article {
+.bodyElements {
     display: block;
     width:80%;
     text-align: left;
+}
+
+.formText {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
 }
