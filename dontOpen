@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script> 
+<script type="text/javascript" src="jquery-2.1.0.js"></script> 
+<script type="text/javascript" > 
+$(function () {
+    $('#button').on('click', function () {
+        var text = $('#text');
+        text.val('Male');    
+    });
+});
+
+$(function () {
+    $('#fembutton').on('click', function () {
+        var text = $('#text');
+        text.val('Female');    
+    });
+});
+</script>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    </head>
+<body>
+<style type="text/css">
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 50px auto;
+    width: 685px;
+
+/* For visibility. Delete me */
+border: 1px solid red;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid green;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Info
+{
+    width: 450px;
+    text-align: left;
+
+    /* Move it to the right */
+    float: right;
+
+}
+
+#Interest
+{
+	width:450px;
+	text-align: left;
+	float: right;
+}
+
+
+</style>
+
+<center>
+    <nav class = "main-menu">
+        <ul>
+            
+            <li>
+                <a href="index.php">HOME</a>
+            </li>
+            
+            <li>
+                <a href="about_us.html">ABOUT US</a>
+            </li>
+            
+            <li>
+                <a href="contact_us.php">CONTACT US</a>
+            </li>
+            
+            <li>
+                <a href="registration.php">REGISTER</a>
+            </li>
+            
+            <li>
+                <a href="login.php">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class = "bodyElements">
+    <h1>My Profile</h1>
+    </div>
+<div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo"></div>
+        <div id="ProfileOptions">
+        a
+        </div>
+    </div>
+
+    <div id="Info">
+	
+	<fieldset style="width:30%"><legend>My Information</legend> <table width="400"> 
+	
+       <tr>	
+	
+				<td>First Name:<input type="text" name="firstname"></td>
+				</tr>
+	
+				<tr>
+				<td>Surname:     <input type="text" name="surname"></td>
+				</tr>
+				<tr>
+					<td>Gender </td> <td width=50%> <img id="male" src = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Aiga_toiletsq_men.svg" height = 100, width = 100, alt "bad if you see this"></td><td width=50%><img id="female" src = "https://upload.wikimedia.org/wikipedia/commons/e/e3/Toilet_women.svg" height = 100 width = 100 alt "bad if you see this"> </td>
+				</tr>
+				<tr><td><button type="button" id="button" onclick= "selectMale()">Male </button></td> <td> <button type="button" id= "fembutton">Female</button></td></tr>
+				<tr> <td><input type="text" name="gender" id="text"></td>
+				</tr>
+	
+				<tr>
+					<td>Date of Birth: <input type="date"   value="dd-mm-yyyy" class="input-medium search-query" onkeypress="return false">
+					</td>
+				</tr>
+	
+				<tr>
+					<td>I prefer
+					<select>
+						<option selected disabled>Choose here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						</select></td>
+				</tr>
+	
+				<tr>
+					<td>About me</td>
+				</tr>	
+				<tr>	<td>
+					<textarea rows="3" cols="40" name="description" form="usrform">Enter here...</textarea></td>
+				</tr>
+			</form>
+			</table>
+	
+
+    </div>
+
+    <div id="Interest">
+	<fieldset style="width:30%"><legend>My Interest</legend> <table width="400"> 
+	
+       <tr>	
+		<td>Favorite Movie: </td><td> <input type="text" name="favmovie"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Music: </td><td> <input type="text" name="favmusic"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Book: </td><td> <input type="text" name="favbook"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Hobby: </td><td> <input type="text" name="hobby"></td> 
+	</tr>
+				
+	<tr>
+					<td>Political Views</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="extliberal">Extreme Liberal</option>
+						<option value="mildliberal">Mild Liberal</option>
+						<option value="central">Central</option>
+						<option value="mildconservative">Mild Conservative</option>
+						<option value="extconservative">Extreme Conservative</option>
+						<option value="extconservative">Not interested in Politics</option>
+						</select></td>
+				</tr>
+	
+	<tr>
+					<td>Religion</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="protestism">Protestism Christianity</option>
+						<option value="catholics">Catholic Christianity</option>
+						<option value="islam">Islamism</option>
+						<option value="buddhism">Buddhism</option>
+						<option value="hinduism">Hinduism</option>
+						<option value="juduism">Juduism</option>
+						<option value="notlisted">Not listed</option>
+						<option value="atheagno">Athelism/Agnostism</option>
+						<option value="noanswer">Prefer not to answer</option>
+						</select></td>
+				</tr>
+				
+			</form>
+			</table>
+    </div>
+
+    
+    <div style="clear:both"></div>
+</div>
+<footer class = "footer">footer</footer>
+</center>
+
+</body>
+</html>
