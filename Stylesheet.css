@@ -20,8 +20,11 @@ font-size: 17px;
 }
 
 form {
-    width:40%;
+    max-width: 500px;
     margin:0 auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
 }
 
 button {
@@ -49,19 +52,19 @@ li a {
     font-weight: 600;
     font-style: normal;
     font-variant: normal;
-    color: black;
+    color: white;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #e0e0e0;
-    color:black;
+    background-color: #B71C1C;
+    color:white;
 }
 
 ul, li{ list-style:none; margin:0; padding:0;}
-.main-menu ul{background-color:#eeeeee;}
+.main-menu ul{background-color:#F44336;}
 .main-menu > ul{ display:table; width:100%;}
 .main-menu > ul > li{ display:table-cell; border-right:1px solid #d4d4d4;}  
 .main-menu > ul > li:last-child{ border-right:none;}
@@ -80,12 +83,21 @@ ul, li{ list-style:none; margin:0; padding:0;}
     font-weight: 600;
 }
 
-.footer {
+
+footer {
   position: absolute;
   right: 10%;
-  bottom: 0;
   left: 10%;
+  margin: 0 auto;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #EF5350;
   text-align: center;
+}
+
+label {
+text-align: left;
+}
+
+textarea {
+    resize: none;
 }
