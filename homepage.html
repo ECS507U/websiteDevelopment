@@ -1,59 +1,24 @@
-<!DOCTYPE HTML>
-<html> 
-<meta name="viewport" content="width=devide-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="Stylesheet.css">
-<title>Home</title>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <style>
-	.mySlides {display:none}
-	.w3-left, .w3-right, .w3-badge {cursor:pointer}
-	.w3-badge {height:13px;width:13px;padding:0}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 </style>
+<body>
 
-	
-<body id="body-color"> 
-	
-	
-		<center>
-	   <nav class = "main-menu">
-		<ul class = "NavigationBar" >
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
 
-		<li>
-		<a href="index.php">HOME</a>
-		</li>
-		 
-		<li>
-		<a href="about_us.html">ABOUT US</a>
-		</li>
-
-		<li>
-		<a href="contact_us.php">CONTACT US</a>
-		</li>
-
-		<li>
-		<a href="registration.php">REGISTER</a>
-		</li>
-
-		<li>
-		<a href="login.php">LOGIN</a>
-		</li>
-
-		</ul>
-		</nav>
-        
-    <div class = "bodyElements">
-		<h1>
-			<img src="http://icons.iconarchive.com/icons/martz90/hex/512/dating-site-icon.png" alt="ICON" style="width:48px;height:48px;">
-			Autistic Dating
-		</h1>
-			<h3>Safe and Comforting Dating Website for Autistic Users</h3>
-     </div>
-    
-              
-		
-<div class="image-slide" style="max-height:100%">
-  <img class="mySlides" src="http://www.whenthemusicstops.co.uk/wp-content/uploads/2013/04/couple-speed-dating-960x500.jpg" style="width:100%">
-  <img class="mySlides" src="http://cdnblog.rentcafe.com/blog/wp-content/uploads/2013/01/Fotolia_48380928_Subscription_XL-001.jpg" style="width:100%">
-  <img class="mySlides" src="http://www.kernowdating.co.uk/wp-content/uploads/2015/02/banner1-1600x937.jpg" style="width:100%">
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
     <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -61,9 +26,8 @@
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
   </div>
-</div>		
-		
-		
+</div>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -92,11 +56,6 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 </script>
-	</center>             
-        <footer>
-					<p>Please contact us for any questions or feedbacks</p>
-        </footer>
 
-		
-	</body> 
-</html>
+</body>
+</html> 
