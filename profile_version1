@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script> 
+<script type="text/javascript" src="jquery-2.1.0.js"></script> 
+<script type="text/javascript" > 
+
+$(function () {
+    $('#maleButton').on('click', function () {
+        var text = $('#ug');
+        text.val('Male');    
+    });
+});
+
+$(function () {
+    $('#femaleButton').on('click', function () {
+        var text = $('#ug');
+        text.val('Female');    
+    });
+});
+
+$(function () {
+    $('#bothButton').on('click', function () {
+        var text = $('#ug');
+        text.val('Both');    
+    });
+});
+
+
+$(function () {
+    $('#pgFemaleButton').on('click', function () {
+        var text = $('#pg');
+        text.val('Female');    
+    });
+});
+
+$(function () {
+    $('#pgMaleButton').on('click', function () {
+        var text = $('#pg');
+        text.val('Male');    
+    });
+});
+
+$(function () {
+    $('#pgBothButton').on('click', function () {
+        var text = $('#pg');
+        text.val('Both');    
+    });
+});
+
+
+
+
+</script>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+<style type="text/css">
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 50px auto;
+    width: 685px;
+
+
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+
+
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+
+}
+
+#Info
+{
+    width: 450px;
+    text-align: left;
+
+    /* Move it to the right */
+    float: right;
+
+}
+
+#Interest
+{
+	width:450px;
+	text-align: left;
+	float: right;
+}
+
+
+</style>
+    </head>
+<body>
+
+
+<center>
+    <nav class = "main-menu">
+        <ul>
+            
+            <li>
+                <a href="index.php">HOME</a>
+            </li>
+            
+            <li>
+                <a href="about_us.html">ABOUT US</a>
+            </li>
+            
+            <li>
+                <a href="contact_us.php">CONTACT US</a>
+            </li>
+            
+            <li>
+                <a href="registration.php">REGISTER</a>
+            </li>
+            
+            <li>
+                <a href="login.php">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+<div class = "bodyElements">
+    <h1>My Profile</h1>
+    </div>
+<div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo"></div>
+        <div id="ProfileOptions">
+        <button type="button" id="maleButton">  Change photo</button>  <button type="button" id="maleButton">Delete photo </button> </td> 
+        </div>
+    </div>
+
+    <div id="Info">
+    
+	<fieldset style="width:750" ><legend>My Information</legend> 
+<table width = "700"> 
+	
+      			 <tr>	
+	
+				<td colspan = "4">First Name:<input type="text" name="firstname"></td> 
+			</tr>
+	
+			<tr>
+				<td colspan = "4">Surname: <input type="text" name="surname"></td> 
+			</tr>
+				
+				<tr><td>Date of Birth:</td></tr>
+					<td> <input type="number" name="day" min="1" max="31"></td><td> <input type="number" name="month" min="1" max="12"> </td> <td colspan = "2"><input type="number" name="year" min="1900" max="1998"> </td>
+					
+			</tr>
+			<tr>
+					<td>Gender </td> 
+					<td style="text-align:center"> <img  id="male" src = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Aiga_toiletsq_men.svg" height = 50, width = 40, alt "bad if you see this"></td>
+					<td style="text-align:center"><img id="female" src = "https://upload.wikimedia.org/wikipedia/commons/e/e3/Toilet_women.svg" height = 50 width = 40 alt "bad if you see this"> </td> 
+					<td style="text-align:center">  <img id="male" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Toilets_unisex.svg/2000px-Toilets_unisex.svg.png" height = 50, width = 50, alt "bad if you see this"> </td>
+			</tr>
+			<tr>
+				<td><input type="text" name="userGender" id="ug" readonly> </td>
+				<td><button type="button" id= "maleButton">Male </button> </td> 
+				<td> <button type="button" id= "femaleButton">Female</button> </td>
+				<td><button type="button" id= "bothButton">Both</button> </td> 
+			</tr>
+				
+	
+				
+	
+			<tr>
+					<td>I prefer</td> 
+					<td style="text-align:center"><img id="male" src = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Aiga_toiletsq_men.svg" height = 50, width = 40, alt "bad if you see this"></td>
+					<td style="text-align:center"><img id="female" src = "https://upload.wikimedia.org/wikipedia/commons/e/e3/Toilet_women.svg" height = 50 width = 40 alt "bad if you see this"> </td>
+					<td style="text-align:center"><img id="male" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Toilets_unisex.svg/2000px-Toilets_unisex.svg.png" height = 50, width = 50, alt "bad if you see this"> </td>
+				
+					
+			</tr>
+			<tr> 
+				<td><input type="text" name="prefferedGender" id="pg" readonly></td>
+				<td><button type="button" id="pgMaleButton">Male </button></td> 
+				<td> <button type="button" id= "pgFemaleButton">Female</button></td>
+				<td><button type="button" id="pgBothButton">Both</button></td>
+			</tr>
+			<tr>
+					<td colspan = "4">About me</td> 
+			</tr>	
+			<tr>	<td colspan = "4">
+					<textarea rows="8" cols="60" name="description" form="usrform" id = "textArea" placeholder="Write something about yourself!"></textarea></td> 
+			</tr>
+			</form>
+			</table>
+	
+</div>
+ <div id="Interest">
+   
+	<fieldset style="width:750"><legend>My Interest</legend> 
+<table width = "700"> 
+	
+       <tr>	
+		<td>Favorite Movie: </td><td> <input type="text" name="favmovie"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Music: </td><td> <input type="text" name="favmusic"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Book: </td><td> <input type="text" name="favbook"></td> 
+	</tr>
+	<tr>	
+		<td>Favorite Hobby: </td><td> <input type="text" name="hobby"></td> 
+	</tr>
+				
+	<tr>
+					<td>Political Views</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="extliberal">Extreme Liberal</option>
+						<option value="mildliberal">Mild Liberal</option>
+						<option value="central">Central</option>
+						<option value="mildconservative">Mild Conservative</option>
+						<option value="extconservative">Extreme Conservative</option>
+						<option value="extconservative">Not interested in Politics</option>
+						</select></td>
+				</tr>
+	
+	<tr>
+					<td>Religion</td>
+					<td><select>
+						<option selected disabled>Choose here</option>
+						<option value="protestism">Protestism Christianity</option>
+						<option value="catholics">Catholic Christianity</option>
+						<option value="islam">Islamism</option>
+						<option value="buddhism">Buddhism</option>
+						<option value="hinduism">Hinduism</option>
+						<option value="juduism">Juduism</option>
+						<option value="notlisted">Not listed</option>
+						<option value="atheagno">Athelism/Agnostism</option>
+						<option value="noanswer">Prefer not to answer</option>
+						</select></td>
+				</tr>
+				
+			</form>
+			</table>
+    
+    </div>
+
+    
+    <div style="clear:both"></div>
+</div>
+    
+
+<footer class = "footer">footer</footer>
+</center>
+
+</body>
+</html>

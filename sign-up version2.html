@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html> 
+	<head> 
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+		<title>Sign-Up</title> 
+
+	</head> 
+	<body id="body-color"> 
+		<center>
+	        <nav class = "main-menu">
+		<ul class = "NavigationBar" >
+
+		<li>
+		<a href="index.php">HOME</a>
+		</li>
+		 
+		<li>
+		<a href="about_us.html">ABOUT US</a>
+		</li>
+
+		<li>
+		<a href="contact_us.php">CONTACT US</a>
+		</li>
+
+		<li>
+		<a href="registration.php">REGISTER</a>
+		</li>
+
+		<li>
+		<a href="login.php">LOGIN</a>
+		</li>
+
+		</ul>
+		</nav>
+        
+            <div class = "bodyElements">
+		<h1>
+		Registration
+		</h1>
+        <p>Please note that you must be over 18 to register</p>
+        </div>
+            </center>
+                <form method="POST" action="connectivity-sign-up.php">
+                    
+                    <fieldset>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required="required" placeholder="Enter Username" />
+                    <br/><br/>
+                    <label for="password">Password:</label>
+                    <input name="password" required="required" type="text" placeholder="Enter Password" />
+                    <br/><br/>
+                    <label for="confirm">Confirm Password:</label>
+                    <input name="usernamesignup" required="required" type="text" placeholder="Confirm Password" />
+                    <br/><br/><br/>
+                    <label for="usernamesignup">Email:</label>
+                    <input name="usernamesignup" required="required" type="text" placeholder="Enter Email" />
+                    <br/><br/>
+                    <label for="usernamesignup">First Name:</label>
+                    <input name="usernamesignup" required="required" type="text" placeholder="Enter First Name" />
+                    <br/><br/>
+                    <label for="usernamesignup">Last Name:</label>
+                    <input name="usernamesignup" required="required" type="text" placeholder="Enter Last Name" />
+                    <br/><br/>
+                    </fieldset><br/>
+                    <fieldset>
+                    <label for="gender">Gender:</label>
+                        <center>
+                        <input type="radio" value="None" id="male" name="gender"/>
+                        <label for="male" class="radio">Male</label>
+                        <input type="radio" required="required" value="None" id="female" name="gender" />
+                        <label for="female" class="radio">Female</label>
+                        <input type="radio" required="required" value="None" id="other" name="gender" />
+                        <label for="other" class="radio">Other</label>
+                        </center>
+                    </fieldset><br/>
+                    <fieldset>
+                        <label for="dob">Date Of Birth:</label><br/>
+                        <center>
+                        <table>
+			<tr>
+					<td> <input type="number" name="day" min="1" max="31"></td><td> <input type="number" name="month" min="1" max="12"> </td> <td><input type="number" name="year" min="1900" max="1998"> </td>
+					
+			</tr>
+			</table>
+                        </center>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <label for="prefer">I Prefer:</label><br/>
+                        <center>
+                        <input type="checkbox" name="prefer" value="M" />Men
+                        <input type="checkbox" name="prefer" value="W" />Women
+                        </center>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <label for="me">About Me:</label>
+                        <center>
+                        <textarea placeholder="Write something about yourself!" cols="40" rows="10"></textarea>
+                        </center>
+                    </fieldset>
+                    <button type="submit">Register</button>
+
+				</form>
+                
+        <footer>footer
+        </footer>
+
+		
+	</body> 
+</html>
