@@ -41,31 +41,26 @@
  </div>
 <!-- made color red to compensate for the small text size. Helps bring attention to it especially for autistic users. Added this short text to make it clear what the symbol was for; less room for error epecially for autistic users -->
 <p>Any item with <span class="required">*</span> must be filled out before sending the form.</p>
-
+</center>
 <form id="contact_form" action="#" enctype="multipart/form-data" method="POST">
 <!-- unlike most contact forms, we kept the label to the left of the text box so, for autistic users, it is clear which label corresponds to which text box -->
- <table>
-  <tr>	
-    <td><label for="name">Your name<span class="required">*</span>:</label></td>
-  	<td><input type="text" id="name" name="name"></td>
-  </tr>
-  <tr>
-  	<td><label for="email">Your e-mail<span class="required">*</span>:</label></td>
-  	<td><input type="text" id="email" name="email"></td>
-  </tr>
-  <tr>
-  	<td><label for="subject">Subject:</label></td>
-  	<td><input type="text" id="subject" name="subject"></td>
-  </tr>
-  <tr>
-  	<td><label for="feedback">Your message<span class="required">*</span>:</label></td>
-  	<td><textarea id="feedback"></textarea></td>
-  </tr>
- </table>
- <div class="right">
- <p><button><h3>Submit</h3></button></p>
- </div>
-</form></center>
+   <fieldset>
+   <label for="name">Your name<span class="required">*</span>:</label>
+   <input type="text" placeholder="Type your name here" required="required" name="name">
+
+   <label for="email">Your e-mail<span class="required">*</span>:</label>
+   <input type="text" placeholder="Type your email here" required="required" name="email">
+
+   <label for="subject">Subject:</label></td>
+   <input type="text" id="subject" placeholder="Type your subject here" name="subject">
+
+   <label for="feedback">Your message<span class="required">*</span>:</label><br/><center>
+   <textarea placeholder="Write your message here!" name="feedback" cols="40" rows="10"></textarea>
+   </center>
+   </fieldset>
+   <button><h3>Submit</h3></button>
+
+</form>
 
 </div>
 <footer>footer</footer>
