@@ -7,6 +7,7 @@
 
 	</head> 
 	<body id="body-color"> 
+        <div class="content">
 		<center>
 	        <nav class = "main-menu">
 		<ul class = "NavigationBar" >
@@ -44,27 +45,27 @@
                 <form method="POST" action="connectivity-sign-up.php">
                     
                     <fieldset>
-                    <label for="username">Username:</label>
+                    <label for="username">Username<span class="required">*</span>:</label>
                     <input type="text" name="username" required="required" placeholder="Enter Username" />
                     <br/><br/>
-                    <label for="password">Password:</label>
+                    <label for="password">Password<span class="required">*</span>:</label>
                     <input name="password" required="required" type="text" placeholder="Enter Password" />
                     <br/><br/>
-                    <label for="confirm">Confirm Password:</label>
+                    <label for="confirm">Confirm Password<span class="required">*</span>:</label>
                     <input name="usernamesignup" required="required" type="text" placeholder="Confirm Password" />
                     <br/><br/><br/>
-                    <label for="usernamesignup">Email:</label>
+                    <label for="usernamesignup">Email<span class="required">*</span>:</label>
                     <input name="usernamesignup" required="required" type="text" placeholder="Enter Email" />
                     <br/><br/>
-                    <label for="usernamesignup">First Name:</label>
+                    <label for="usernamesignup">First Name<span class="required">*</span>:</label>
                     <input name="usernamesignup" required="required" type="text" placeholder="Enter First Name" />
                     <br/><br/>
-                    <label for="usernamesignup">Last Name:</label>
+                    <label for="usernamesignup">Last Name<span class="required">*</span>:</label>
                     <input name="usernamesignup" required="required" type="text" placeholder="Enter Last Name" />
                     <br/><br/>
                     </fieldset><br/>
                     <fieldset>
-                    <label for="gender">Gender:</label>
+                    <label for="gender">Gender<span class="required">*</span>:</label>
                         <center>
                         <input type="radio" value="None" id="male" name="gender"/>
                         <label for="male" class="radio">Male</label>
@@ -75,14 +76,14 @@
                         </center>
                     </fieldset><br/>
                     <fieldset>
-                        <label for="dob">Date Of Birth:</label><br/>
+                        <label for="dob">Date Of Birth<span class="required">*</span>:</label><br/>
                         <center>
-                        <input type="date" required="required" name="dob"/>
+                        <input name="year" required="required" type="text" placeholder="DD/MM/YYYY" />
                         </center>
                     </fieldset>
                     <br/>
                     <fieldset>
-                        <label for="prefer">I Prefer:</label><br/>
+                        <label for="prefer">I Prefer<span class="required">*</span>:</label><br/>
                         <center>
                         <input type="checkbox" name="prefer" value="M" />Men
                         <input type="checkbox" name="prefer" value="W" />Women
@@ -95,10 +96,10 @@
                         <textarea placeholder="Write something about yourself!" cols="40" rows="10"></textarea>
                         </center>
                     </fieldset>
-                    <button type="submit">Register</button>
+                    <button type="submit"><h3>Register</h3></button>
 
 				</form>
-                
+                </div>
         <footer>footer
         </footer>
 
