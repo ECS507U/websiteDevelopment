@@ -27,12 +27,17 @@ input[type=text]:focus {
 h1 {
 	font-size: 30px;
     }
+p1 {
+	font-size: 12px;
+    color: red;
+    }
 table {
     width: 100%;
+    padding: 1px;
 }
 .right {
     position: absolute;
-    right: 93px;
+    right: 97px;
     padding: 5px;
 }
 </style>
@@ -70,6 +75,9 @@ table {
 
 <p>Please complete the following form to contact us regarding any issues you may have with the site and we will respond to you as soon as possible.</p>
 
+<!-- made color red to compensate for the small text size. Helps bring attention to it especially for autistic users. Added this short text to make it clear what the symbol was for; less room for error epecially for autistic users -->
+<p1>Any item with * must be filled out before sending the form.</p1>
+
 <center><form id="contact_form" action="#" enctype="multipart/form-data" method="POST">
 <!-- unlike most contact forms, we kept the label to the left of the text box so, for autistic users, it is clear which label corresponds to which text box -->
  <table>
@@ -91,7 +99,7 @@ table {
   </tr>
  </table>
  <div class="right">
- <p><input id="submit_button" type="submit" value="Send email" /></p>
+ <p><input id="submit_button" type="submit" value="Submit form" /></p>
  </div>
 </form></center>
   
