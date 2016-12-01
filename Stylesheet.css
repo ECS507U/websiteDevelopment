@@ -1,22 +1,25 @@
+/* Toggling some basic parameters to make page look nicer */
 body {
-background-color: #FAFAFA;
+    background-color: #FAFAFA;
+    margin: 0 0 0;
+    height:100%;
 }
 
 h1{
-font-family: Verdana, Geneva, sans-serif;
-font-size: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 40px;
 } 
 
 b {
-font-family: Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 p {
-font-family: Verdana, Geneva, sans-serif;
-font-style: normal;
-font-variant: normal;
-line-height: 130%;
-font-size: 17px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 130%;
+    font-size: 17px;
 }
 
 form {
@@ -28,13 +31,18 @@ form {
 }
 
 button {
-    background-color: #FF3D00;
+    background-color: #FF3D11;
     color: white;
     padding: 14px 20px;
     margin: 8px 1px;
     border: none;
     cursor: pointer;
     width: 100%;
+    
+}
+
+button:hover{
+    background-color: #d50000; 
 }
 
 input[type=text], input[type=password] {
@@ -44,6 +52,10 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+ul, li{ 
+    list-style:none; margin:0; padding:0;
 }
 
 li a {
@@ -63,39 +75,55 @@ li a:hover {
     color:white;
 }
 
-ul, li{ list-style:none; margin:0; padding:0;}
+/* A class for the navigation bar */
 .main-menu ul{background-color:#F44336;}
 .main-menu > ul{ display:table; width:100%;}
 .main-menu > ul > li{ display:table-cell; border-right:1px solid #d4d4d4;}  
 .main-menu > ul > li:last-child{ border-right:none;}
 .main-menu > ul > li > a{ text-align:center;}
-.main-menu {width:80%;}
+.main-menu {
+    width:80%;
+}
 
+/* Width of the actual website will be 80% of the web browser screen width.
+This is done so the website is more usable from a mobile device, and to add 
+more focus to the content */
 .bodyElements {
     display: block;
     width:80%;
     text-align: left;
 }
 
+/* A class to modify text in <form> element */
 .formText {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 13px;
     font-weight: 600;
 }
 
+.required{
+    color:#f44336;
+}
 
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+/* Footer should follow the global width settings and be right after all elements in <buddy> */
 footer {
-  position: absolute;
-  right: 10%;
-  left: 10%;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: #EF5350;
-  text-align: center;
+    width: 80%;
+    position: static;
+    height:50px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #EF5350;
+    text-align: center;
 }
 
 label {
-text-align: left;
+    text-align: left;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
 }
 
 textarea {
