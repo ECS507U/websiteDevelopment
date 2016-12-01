@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text] {
+    width: 70%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+textarea {
+    width: 70%;
+    height: 150px;
+    padding: 8px 10px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+    resize: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+h1 {
+	font-size: 30px;
+    }
+table {
+    width: 100%;
+}
+.right {
+    position: absolute;
+    right: 93px;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Contact us</h1>
+
+<p>Please complete the following form to contact us regarding any issues you may have with the site and we will respond to you as soon as possible.</p>
+
+<center><form id="contact_form" action="#" enctype="multipart/form-data" method="POST">
+<!-- unlike most contact forms, we kept the label to the left of the text box so, for autistic users, it is clear which label corresponds to which text box -->
+ <table>
+  <tr>	
+    <td><label for="name">Your name*:</label></td>
+  	<td><input type="text" id="name" name="name"></td>
+  </tr>
+  <tr>
+  	<td><label for="email">Your e-mail*:</label></td>
+  	<td><input type="text" id="email" name="email"></td>
+  </tr>
+  <tr>
+  	<td><label for="subject">Subject:</label></td>
+  	<td><input type="text" id="subject" name="subject"></td>
+  </tr>
+  <tr>
+  	<td><label for="feedback">Your message*:</label></td>
+  	<td><textarea id="feedback"></textarea></td>
+  </tr>
+ </table>
+ <div class="right">
+ <p><input id="submit_button" type="submit" value="Send email" /></p>
+ </div>
+</form></center>
+  
+
+</body>
+</html>
