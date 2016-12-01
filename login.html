@@ -7,6 +7,7 @@
 </head>
 
 <body>
+<div class="content">
 <center>
 <nav class = "main-menu">
 <ul class = "NavigationBar" >
@@ -40,17 +41,17 @@ Login
 
 <form action="login_action.php" method = "post">
   <label><b>Username:</b></label><br>
-  <input type="text" name="username" placeholder="Enter Username">
+  <input type="text" name="username" required="required" placeholder="Enter Username">
   <br>
   <label><b>Password:</b></label><br>
-  <input type="password" name="password" placeholder="Enter Password">
+  <input type="password" name="password" required="required" placeholder="Enter Password">
   <br><br>
-  <button type="submit">Login</button>
+  <button type="submit"><h3>Login</h3></button>
 </fieldset> <br>
 <div class = "formText"><a href="password_reset.php">Forgot password?</a> <span style = "float:right;">
 New? - <a href="registration.php">Register</a> </span> </div> </form>
 </div>
-
+</div>
 
 <footer class = "footer">footer</footer>
 </center>
