@@ -1,51 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-input[type=text] {
-    width: 70%;
-    padding: 8px 10px;
-    margin: 8px 0;
-    font-size: 14px;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-textarea {
-    width: 70%;
-    height: 150px;
-    padding: 8px 10px;
-    border: 3px solid #ccc;
-    font-size: 14px;
-    resize: none;
-}
-input[type=text]:focus {
-    border: 3px solid #555;
-}
-h1 {
-	font-size: 30px;
-    }
-p1 {
-	font-size: 12px;
-    color: red;
-    }
-table {
-    width: 100%;
-    padding: 1px;
-}
-.right {
-    position: absolute;
-    right: 97px;
-    padding: 5px;
-}
-</style>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+<title>Contact Us</title>
 </head>
 <body>
-	
+<div class="content">
 <center>
-<nav class = "main-menu">
+
+<nav class ="main-menu">
 <ul class = "NavigationBar" >
 
 <li>
@@ -69,24 +33,24 @@ table {
 </li>
 </ul>
 </nav>
-</center>
-	
+
+<div class = "bodyElements">	
 <h1>Contact us</h1>
 
 <p>Please complete the following form to contact us regarding any issues you may have with the site and we will respond to you as soon as possible.</p>
-
+ </div>
 <!-- made color red to compensate for the small text size. Helps bring attention to it especially for autistic users. Added this short text to make it clear what the symbol was for; less room for error epecially for autistic users -->
-<p1>Any item with * must be filled out before sending the form.</p1>
+<p>Any item with <span class="required">*</span> must be filled out before sending the form.</p>
 
-<center><form id="contact_form" action="#" enctype="multipart/form-data" method="POST">
+<form id="contact_form" action="#" enctype="multipart/form-data" method="POST">
 <!-- unlike most contact forms, we kept the label to the left of the text box so, for autistic users, it is clear which label corresponds to which text box -->
  <table>
   <tr>	
-    <td><label for="name">Your name*:</label></td>
+    <td><label for="name">Your name<span class="required">*</span>:</label></td>
   	<td><input type="text" id="name" name="name"></td>
   </tr>
   <tr>
-  	<td><label for="email">Your e-mail*:</label></td>
+  	<td><label for="email">Your e-mail<span class="required">*</span>:</label></td>
   	<td><input type="text" id="email" name="email"></td>
   </tr>
   <tr>
@@ -94,15 +58,16 @@ table {
   	<td><input type="text" id="subject" name="subject"></td>
   </tr>
   <tr>
-  	<td><label for="feedback">Your message*:</label></td>
+  	<td><label for="feedback">Your message<span class="required">*</span>:</label></td>
   	<td><textarea id="feedback"></textarea></td>
   </tr>
  </table>
  <div class="right">
- <p><input id="submit_button" type="submit" value="Submit form" /></p>
+ <p><button><h3>Submit</h3></button></p>
  </div>
 </form></center>
-  
 
+</div>
+<footer>footer</footer>
 </body>
 </html>
