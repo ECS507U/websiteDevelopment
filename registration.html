@@ -85,8 +85,12 @@
                     <fieldset>
                         <label for="prefer">I Prefer<span class="required">*</span>:</label><br/>
                         <center>
-                        <input type="checkbox" name="prefer" value="M" />Men
-                        <input type="checkbox" name="prefer" value="W" />Women
+                        <input type="radio" value="None" id="pgMale" name="preferredGender"/>
+                        <label for="male" class="radio">Male</label>
+                        <input type="radio" required="required" value="None" id="pgFemale" name="preferredGender" />
+                        <label for="female" class="radio">Female</label>
+                        <input type="radio" required="required" value="None" id="pgOther" name="preferredGender" />
+                        <label for="other" class="radio">Other</label>
                         </center>
                     </fieldset>
                     <br/>
