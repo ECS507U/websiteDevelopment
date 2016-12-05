@@ -99,6 +99,12 @@ ul, li{
     text-align: left;
 }
 
+/* Make text more bold and Verdana */
+.formText {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+}
+
 /* Create footer which logically finishes the webpage and it looks complete */
 footer {
   position: absolute;
