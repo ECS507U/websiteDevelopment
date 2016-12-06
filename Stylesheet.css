@@ -23,12 +23,16 @@ line-height: 130%;
 font-size: 17px;
 }
 
+table {
+	width:50%;
+	border-spacing:50px;
+}
+
 /* Make form fixed width so they are consistent through all pages */
 form {
     max-width: 500px;
     margin:0 auto;
     padding: 10px 20px;
-    background: #f4f7f8;
     border-radius: 8px;
 }
 
