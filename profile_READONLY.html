@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+	<title>My Profile</title>
+</head>
+
+<body>
+
+<div class = "content">	
+<center>
+    <nav class = "main-menu">
+        <ul>
+            
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            
+            <li>
+                <a href="about_us.html">ABOUT US</a>
+            </li>
+            
+            <li>
+                <a href="contact_us.html">CONTACT US</a>
+            </li>
+            
+            <li>
+                <a href="registration.html">REGISTER</a>
+            </li>
+            
+            <li>
+                <a href="login.html">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+	
+<div class = "bodyElements">
+    <h1>My Profile</h1>
+    </div>
+	
+	<table>
+      <tr>
+       <td rowspan = "2" width = "30%" align = "top" style="vertical-align:top;">
+	    <center>
+		<fieldset>
+		<img src="face.png">
+		</center>
+		</fieldset>
+		<button type="button">  Change photo</button>  
+		<button type="button">Delete photo </button>
+       </td>
+       <td width = "70%">
+	    <fieldset>
+	    <h2>My Information</h2>
+		<label>Name:</label>
+		<input type="text" name="name" value="Gleb" readonly />
+		<br><br>
+		<label>Surname:</label>
+		<input type="text" name="surname" value="Mirolyubov" readonly />
+		<br><br>
+	    <label>Date of Birth:</label>
+		<input type="text" name="DoB" value="14/03/89" readonly />
+		<br><br>
+		<label for="gender">Gender:</label>
+        <input type="text" name="gender" value="Other" readonly />
+		<br><br>
+		<label for="gender">I Prefer:</label>
+        <input type="text" name="preference" value="Both" readonly />
+		<br><br>
+		<label for="me">About Me:</label>
+        <center>
+        <textarea cols="40" rows="10" readonly placeholder="Write something about yourself!"></textarea>
+        </center>
+		</fieldset>
+	   </td>
+      </tr>
+	  <tr>
+	   <td>
+	    <fieldset>
+	    <h2>My Interests</h2>
+		<label>Favourite Movies:</label>
+		<input type="text" name="movie" value="50 Shades of Gay" readonly />
+		<br><br>
+	    <label>Favourite Music:</label>
+		<input type="text" name="music" value="One Direction" readonly />
+		<br><br>
+		<label>Favourite Books:</label>
+        <input type="text" name="book" value="Bible" readonly />
+		<label>Favourite Hobbies:</label>
+        <input type="text" name="hobby" value="Tennis" readonly />
+		<label>Political Views:</label>
+        <input type="text" name="politics" value="NaN" readonly />
+		<label>Religion:</label>
+        <input type="text" name="religion" value="NaN" readonly />
+		</fieldset>
+		<button type="button">Edit</button>
+	   </td>
+	  </tr>
+    </table>
+
+</div>
+</center>
+
+<footer class = "footer"></footer>
+
+</body>
+</html>
