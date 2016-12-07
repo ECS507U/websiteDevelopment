@@ -26,6 +26,8 @@ font-size: 17px;
 table {
 	width:50%;
 	border-spacing:50px;
+        display: block;
+        margin: 0 auto;
 }
 
 /* Make form fixed width so they are consistent through all pages */
@@ -94,13 +96,18 @@ ul, li{
 .main-menu > ul > li{ display:table-cell; border-right:1px solid #d4d4d4;}  
 .main-menu > ul > li:last-child{ border-right:none;}
 .main-menu > ul > li > a{ text-align:center;}
-.main-menu {width:80%;}
+.main-menu {
+  width:80%;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Align elements below navigation bar to inherit its width and be in the centre */
 .bodyElements {
     display: block;
     width:80%;
     text-align: left;
+    margin: 0 auto;
 }
 
 /* Make text more bold and Verdana */
@@ -140,6 +147,8 @@ label {
 /* Disallow modifying texture size for design purposes */
 textarea {
    resize: none;
+   display: block;
+   margin: 0 auto;
 }
 
 /* Slideshow container */
