@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+	<title>My Profile</title>
+</head>
+
+<body>
+<?php 
+
+$myFile = "name.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 1");
+$firstName = fgets ($fh);
+fclose($fh);
+
+$myFile = "second_name.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 2");
+$lastName = fgets ($fh);
+fclose($fh);
+
+
+
+$myFile = "dob.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 3");
+$dob = fgets ($fh);
+fclose($fh);
+
+$myFile = "email.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 4");
+$email = fgets ($fh);
+fclose($fh);
+
+$myFile = "gender.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 5");
+$gender = fgets ($fh);
+fclose($fh);
+
+$myFile = "gender_preference.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 6");
+$preferredGender = fgets ($fh);
+fclose($fh);
+
+$myFile = "about_me.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$aboutMe = fgets ($fh);
+fclose($fh);
+
+$myFile = "movies.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$movies = fgets ($fh);
+fclose($fh);
+
+$myFile = "music.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$music = fgets ($fh);
+fclose($fh);
+
+$myFile = "books.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$books = fgets ($fh);
+fclose($fh);
+
+$myFile = "hobbies.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$hobbies = fgets ($fh);
+fclose($fh);
+
+$myFile = "politics.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$politics = fgets ($fh);
+fclose($fh);
+
+$myFile = "religion.txt";
+$fh = fopen($myFile, 'r') or die("can't open file 7");
+$religion = fgets ($fh);
+fclose($fh);
+
+?>
+
+<div class = "content">	
+
+    <nav class = "main-menu">
+		<ul class = "NavigationBar" >
+
+		<li>
+		<a href="index.php">HOME</a>
+		</li>
+		 
+		<li>
+		<a href="about_us.php">ABOUT US</a>
+		</li>
+
+		<li>
+		<a href="contact_us.php">CONTACT US</a>
+		</li>
+
+		<li>
+		<?php 
+		$loggedOn = "t";
+		$loggedOff = "f";
+		$loginStatusFile = "login_state.txt";
+		$fhloginState = fopen ($loginStatusFile, 'r') or die("can't open file");
+		$stateValue = fgetc($fhloginState);
+		fclose ($fhloginState);
+		
+		if ($stateValue == $loggedOff ) {
+			
+				echo '<a href="registration.html">REGISTER</a>';
+			}
+		elseif ($stateValue == $loggedOn) 
+			{
+			  echo '<a href="profile.php">MY PROFILE</a>';
+			}
+			
+			
+		?>
+		</li>
+
+		<li>
+		<?php 
+		$loggedOn = "t";
+		$loggedOff = "f";
+		$loginStatusFile = "login_state.txt";
+		$fhloginState = fopen ($loginStatusFile, 'r') or die("can't open file");
+		$stateValue = fgetc($fhloginState);
+		fclose ($fhloginState);
+		
+		if ($stateValue == $loggedOff ) {
+			
+				echo '<a href="login.html">LOGIN</a>';
+			}
+		elseif ($stateValue == $loggedOn) 
+			{
+			  echo '<a href="logout.php">LOGOUT</a>';
+			}
+			
+			
+		?>
+		
+		</li>
+
+		</ul>
+		</nav>
+	
+<div class = "bodyElements">
+    <h1>My Profile</h1>
+    </div>
+	<form action="edit_profile.php" method = "post" style="width:100%">
+	<table>
+      <tr>
+       <td rowspan = "2" width = "30%" style="vertical-align:top;">
+	    <fieldset>
+	    
+		<img src="face.png" alt="My Photo" height="150" width="150">
+	    
+		</fieldset>
+		<button type="button">  Change photo</button>  
+		<button type="button">Delete photo </button>
+       </td>
+       <td width = "70%">
+	    <fieldset>
+	    <h2>My Information</h2>
+		<label>Name:</label>
+		<input type="text" name="name" value= "<?php echo $firstName; ?>" readonly />
+		<br><br>
+		<label>Surname:</label>
+		<input type="text" name="surname" value= "<?php echo $lastName; ?>" readonly />
+		<br><br>
+	    <label>Date of Birth:</label>
+		<input type="text" name="DoB" value="<?php echo $dob; ?>" readonly />
+		<br><br>
+		<label for="gender">Gender:</label>
+        <input type="text" name="gender" value= "<?php echo $gender; ?>" readonly />
+		<br><br>
+		<label for="gender">I Prefer:</label>
+        <input type="text" name="preference" value="<?php echo $preferredGender; ?>" readonly />
+		<br><br>
+		<label for="me">About Me:</label>
+       
+        <textarea cols="40" rows="10" readonly placeholder="Write something about yourself!"> <?php echo $aboutMe; ?></textarea>
+        
+		</fieldset>
+	   </td>
+      </tr>
+	  <tr>
+	   <td>
+	    <fieldset>
+	    <h2>My Interests</h2>
+		<label>Favourite Movies:</label>
+		<input  type="text" name="movie" value= "<?php echo $movies; ?>" readonly />
+		<br><br>
+	    <label>Favourite Music:</label>
+		<input type="text" name="music" value= "<?php echo $music; ?>" readonly />
+		<br><br>
+		<label>Favourite Books:</label>
+        <input type="text" name="book" value= "<?php echo $books; ?>" readonly />
+		<label>Favourite Hobbies:</label>
+        <input type="text" name="hobby" value= "<?php echo $hobbies; ?>" readonly />
+		<label>Political Views:</label>
+        <input type="text" name="politics" value="<?php echo $politics; ?>" readonly />
+		<label>Religion:</label>
+        <input type="text" name="religion" value= "<?php echo $religion; ?>" readonly />
+		</fieldset>
+		<button type="submit">Edit</button>
+	   </td>
+	  </tr>
+    </table>
+    </form>
+
+</div>
+
+
+     <footer><p>Please do not hesitate to contact us if you have any questions</p></footer>
+
+</body>
+</html> 
