@@ -145,7 +145,7 @@ fclose($fh);
 <div class = "bodyElements">
     <h1>My Profile</h1>
     </div>
-	<form action="edit_profile.php" method = "post" style="width:100%">
+    <form action="edit_profile.php" method = "post">
 	<table>
       <tr>
        <td rowspan = "2" width = "30%" style="vertical-align:top;">
@@ -204,13 +204,13 @@ fclose($fh);
 		<button type="submit">Edit</button>
 	   </td>
 	  </tr>
+	
     </table>
-    </form>
-
+      </form>
 </div>
 
 
-     <footer><p>Please do not hesitate to contact us if you have any questions</p></footer>
+     <footer></footer>
 
 </body>
 </html> 
